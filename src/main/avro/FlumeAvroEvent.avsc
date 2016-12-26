@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "AvroFlumeEvent",
+  "namespace": "org.apache.flume.source.avro",
+  "fields": [
+    {
+      "name": "headers",
+      "type": {
+        "type": "map",
+        "values": "string"
+      }
+    },
+    {
+      "name": "body",
+      "type": "bytes"
+    }
+  ]
+}
